@@ -1,0 +1,23 @@
+{
+  "name": "onionui",
+  "version": "1.0.0",
+  "description": "简易ui组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheilaTing/onionUI.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "sheilaTing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SheilaTing/onionUI/issues"
+  },
+  "homepage": "https://github.com/SheilaTing/onionUI#readme"
+}
