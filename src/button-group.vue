@@ -23,6 +23,7 @@
     display: inline-flex;
     vertical-align: middle;
     > .o-button {
+      cursor: pointer;
       border-radius: 0;
       &:not(:first-child) {
         margin-left: -1px;
@@ -36,6 +37,8 @@
         border-bottom-right-radius: var(--border-radius);
       }
       &:hover {
+        color:darkcyan;
+        border-color:darkcyan;
         position: relative;
         z-index: 1;
       }

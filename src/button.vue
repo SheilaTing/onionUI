@@ -51,6 +51,11 @@
         justify-content: center;
         align-items: center;
         vertical-align:middle;
+        //相邻的元素缝隙
+        // & + &{
+        //     margin-right:4px;
+        // }
+        margin-left:4px;
         > .icon{
             // 图标默认order:1 左侧
             order:1;  
