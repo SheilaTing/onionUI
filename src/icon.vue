@@ -1,6 +1,6 @@
 <template>
   <div>
-        <svg v-if="name" class="icon">
+        <svg class="icon">
         <use :xlink:href="[`#icon-${name}`]"></use>
     </svg>
   </div>

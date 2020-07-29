@@ -30,10 +30,14 @@
     <div id="app">
         
         <o-button icon="setting"
+        :loading="loading1"
+        @click="loading1=!loading1"
         >按钮</o-button>
 
         <o-button iconposition="right"
         icon="download"
+        :loading="loading2"
+        @click="loading2=!loading2"
         >提交</o-button>
 
         <o-button @click="" iconposition="left"

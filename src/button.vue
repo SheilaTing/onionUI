@@ -1,9 +1,12 @@
 <template>
     <div>
         <!-- 要实现的效果是loading和seting只显示一个图标，所以要写在一起控制 -->
-        <button class='o-button' :class="{ [`icon-${iconposition}`]: true }">
-            <o-icon :name="icon" class="icon"></o-icon>
-            <o-icon class="loading" name="loading"></o-icon>
+        <button class='o-button'
+         :class="{ [`icon-${iconposition}`]: true }"
+         @click="$emit('click')"
+         >
+            <o-icon v-if="icon && !loading" :name="icon" class="icon"></o-icon>
+            <o-icon v-if="loading" class="loading icon" name="loading"></o-icon>
            <div class="content">
                 <slot></slot>
            </div>
@@ -16,6 +19,10 @@
         // props:['icon','iconposition']
         props:{
             icon:{},
+            loading:{
+                type:Boolean,
+                default:false,
+            },
             iconposition:{
                 type:String,
                 default:'left',
