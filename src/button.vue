@@ -1,5 +1,4 @@
 <template>
-    <div>
         <!-- 要实现的效果是loading和seting只显示一个图标，所以要写在一起控制 -->
         <button class='o-button'
          :class="{ [`icon-${iconposition}`]: true }"
@@ -11,7 +10,6 @@
                 <slot></slot>
            </div>
         </button>
-    </div>
 </template>
 
 <script>
@@ -36,7 +34,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @keyframes spin {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
@@ -53,7 +51,6 @@
         justify-content: center;
         align-items: center;
         vertical-align:middle;
-        margin-left:10px;
         > .icon{
             // 图标默认order:1 左侧
             order:1;  
