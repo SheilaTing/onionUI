@@ -1,12 +1,14 @@
 <template>
-    <svg v-if="icon" class="icon">
-        <use :xlink:href="`#icon-${icon}`"></use>
+  <div>
+        <svg v-if="name" class="icon">
+        <use :xlink:href="[`#icon-${name}`]"></use>
     </svg>
+  </div>
 </template>
 
 <script>
     export default {
-        props:['icon']
+        props:['name'] // 图标名称
     }
 </script>
 
