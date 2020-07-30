@@ -4,11 +4,13 @@ import Icon from './icon.vue'
 import ButtonGroup from './button-group.vue'
 import chai, { expect } from "chai";
 import spies from 'chai-spies';
+import Input from './input.vue'
 chai.use(spies);
 
 Vue.component('o-button',Button)
 Vue.component('o-icon',Icon)
 Vue.component('o-button-group',ButtonGroup)
+Vue.component('o-input',Input)
 new Vue({
     el:'#app',
     data:{
