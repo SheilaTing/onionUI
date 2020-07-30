@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import './svg.js'
     export default {
         props:['name'] // 图标名称
     }
