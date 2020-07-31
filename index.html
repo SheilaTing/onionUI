@@ -26,11 +26,16 @@
     }
 
     #app {
-        margin: 20px 10px;
-        display: inline-flex;
+        width:800px;
+        margin: 20px auto;
+        border:1px solid #ccc;
+        
     }
-    #box{
-        margin:20px 20px;
+
+    .box {
+        margin: 20px 20px;
+        display: inline-flex;
+        flex-wrap: wrap;
     }
 </style>
 
@@ -50,14 +55,19 @@
             </o-button-group>
         </div>
 
+
+
+
         <!-- input组件 -->
         <div class="box">
-            <o-input value="测试正常" />
-            <o-input value="测试禁用" disabled />
-            <o-input value="测试只读" readonly />
-            <o-input value="测试error" error="一些规则，例如，长度不能小于3" />
-
+            <!-- <o-input value="测试正常"></o-input>
+            <o-input value="测试禁用" disabled></o-input>
+            <o-input value="测试只读" readonly></o-input>
+            <o-input value="测试error" error="一些规则，例如，长度不能小于3"></o-input>
+            <o-input value="测试 onchange事件" @change="handlechange"></o-input> -->
         </div>
+
+
 
 
     </div>

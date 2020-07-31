@@ -16,6 +16,11 @@ new Vue({
     data:{
         loading1:false,
         loading2:false
+    },
+    methods:{
+        handlechange(event){
+            console.log(event.target.value)
+        }
     }
 })
 

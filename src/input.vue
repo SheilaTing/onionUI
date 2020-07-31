@@ -1,8 +1,10 @@
 <template>
     <div class="wrapper" :class="{'error':error}">
-        <input type="text" :value="value" :disabled="disabled" :readonly="readonly">
+        <input type="text" :value="value" :disabled="disabled" :readonly="readonly"
+        @change="$emit('change',$event.target.value)"
+        >
         <template v-if="error">
-        <o-icon icon = "error" class="icon-error"></o-icon>
+        <o-icon name = "error" class="icon-error"></o-icon>
         <span class="errorMessage">{{error}}</span>
          </template>
     </div>
@@ -43,15 +45,20 @@ $box-shadow-color:rgba(0,0,0,.5);
 $red:#f1453D;
 .wrapper{
     font-size: $font-size;
-    display:inline-flex;
+    display:flex;
     align-items: center;
-    > ：not(:last-child)*{margin-right: .5em;} // wrapper中每个元素,除了最后一个 半个字间距
+    margin-left: 8px;
+    margin-top:8px;
+    > :not(:last-child)*{margin-right: .5em;} // wrapper中每个元素,除了最后一个 半个字间距
    > input{
        border:1px solid $border-color;
+      
+       padding:4px 1em;
+       outline: none;
        &:hover{
            border-color:$border-color-hover;
            border-radius: $border-radius;
-           padding:0 8px;
+           padding:4px 1em;
            font-size: inherit;
        }
        &:focus{
@@ -70,6 +77,8 @@ $red:#f1453D;
          }
          .icon-error{
              fill:$red;
+             margin-left:1em;
+             margin-right: .5em;
          }
          .errorMessage{
              color:$red;
