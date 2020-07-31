@@ -6,7 +6,17 @@
 
 <script>
     export default {
-        
+        props:{
+            gutter:{
+                type:[Number,String]
+            }
+        },
+        mounted(){
+            this.$children.forEach((vm)=>{
+                //传递给子组件 col组件
+                vm.gutter = this.gutter
+            })
+        }
     }
 </script>
 
