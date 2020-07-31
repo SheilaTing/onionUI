@@ -5,12 +5,17 @@ import ButtonGroup from './button-group.vue'
 import chai, { expect } from "chai";
 import spies from 'chai-spies';
 import Input from './input.vue'
+import Row from './row.vue';
+import Col from './col.vue'
 chai.use(spies);
 
 Vue.component('o-button',Button)
 Vue.component('o-icon',Icon)
 Vue.component('o-button-group',ButtonGroup)
-Vue.component('o-input',Input)
+Vue.component('o-input',Input);
+Vue.component('o-row',Row);
+Vue.component('o-col',Col)
+
 new Vue({
     el:'#app',
     data:{
