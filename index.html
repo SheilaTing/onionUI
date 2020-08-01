@@ -17,7 +17,7 @@
     
 
     #app {
-        width: 800px;
+        /* width: 800px; */
         margin: 20px auto;
         border: 1px solid #ccc;
 
@@ -28,6 +28,7 @@
         display: inline-flex;
         flex-wrap: wrap;
     }
+  
 </style>
 
 <body>
@@ -46,16 +47,13 @@
             </o-button-group>
         </div>
 
-
-
-
         <!-- input组件 -->
         <div class="box">
-            <!-- <o-input value="测试正常"></o-input>
+            <o-input value="测试正常"></o-input>
             <o-input value="测试禁用" disabled></o-input>
             <o-input value="测试只读" readonly></o-input>
             <o-input value="测试error" error="一些规则，例如，长度不能小于3"></o-input>
-            <o-input value="测试 onchange事件" @change="handlechange"></o-input> -->
+            <o-input value="测试 onchange事件" @change="handlechange"></o-input>
         </div>
 
         <!-- 测试栅格布局 -->
@@ -65,32 +63,23 @@
         也就是说想显示成什么样子是用户来决定的，我只是使用媒体查询，在相应的屏幕生成样式提供这个功能而已，棒
         row 是可以折行显示的，所以如果一行放不下就会换行
     -->
-        <div class="box">
-            <o-row>
-                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
-                    <div></div>
+        <!-- <div class="box"> -->
+            <o-row gutter='2'>
+                <o-col span="24" :phone="{span:12}">
+                    <div>1</div>
                 </o-col>
-                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
-                    <div></div>
+                <o-col span="8" :phone="{span:12}">
+                    <div>2</div>
                 </o-col>
-                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
-                    <div></div>
+                <o-col span="8">
+                    <div>3</div>
                 </o-col>
-                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
-                    <div></div>
-                </o-col>
-                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
-                    <div></div>
-                </o-col>
-                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
-                    <div></div>
+                <o-col span="8">
+                    <div>4</div>
                 </o-col>
             </o-row>
         </div>
-
-
-
-    </div>
+    <!-- </div> -->
 </body>
 <script src="./src/app.js"></script>
 

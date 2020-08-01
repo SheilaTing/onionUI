@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/SheilaTing/onionUI#readme",
   "dependencies": {
+    "sass-loader": "^9.0.2",
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4"
   },
@@ -47,6 +48,6 @@
     "vuepress": "^1.5.2"
   },
   "alias": {
-    "vue": "./node_modules/vue/dist/vue.common.js"
+    "vue" : "./node_modules/vue/dist/vue.common.js"
   }
 }

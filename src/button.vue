@@ -10,7 +10,11 @@
 </template>
 
 <script>
+import Icon from './icon'
 export default {
+  components: {
+    "o-icon": Icon,
+  },
   // props:['icon','iconposition']
   props: {
     icon: {},

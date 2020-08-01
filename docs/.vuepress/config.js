@@ -1,6 +1,7 @@
 module.exports = {
     title: 'tangerine UI',
     description: 'Just playing around',
+    base:'/onionUI/',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
@@ -16,7 +17,12 @@ module.exports = {
             {
                 title: '组件',
                 children: [
-                    '/components/']
+                    '/components/button',
+                    '/components/input',
+                    '/components/tabs',
+                    '/components/collapse',
+                    '/components/grid'
+                ]
             }
 
         ]
