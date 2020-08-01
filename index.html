@@ -14,22 +14,13 @@
     }
 
     /* css变量用法 */
-    :root {
-        --button-height: 32px;
-        --font-size: 14px;
-        --button-bg: white;
-        --button-active-bg: #eee;
-        --border-radius: 4px;
-        --color: #333;
-        --border-color: #999;
-        --border-color-hover: #666;
-    }
+    
 
     #app {
-        width:800px;
+        width: 800px;
         margin: 20px auto;
-        border:1px solid #ccc;
-        
+        border: 1px solid #ccc;
+
     }
 
     .box {
@@ -68,21 +59,32 @@
         </div>
 
         <!-- 测试栅格布局 -->
+        <!-- 原理，提供几个不同客户端的样式供用户来设置，而这些设置只会在用户屏幕对应的客户端上
+        生效,例如，我期望在手机上，一行有三列，那么我就设置 :phone='{span:8}'
+        期望在pad上有两列，就设置 :ipad='{span:12}'
+        也就是说想显示成什么样子是用户来决定的，我只是使用媒体查询，在相应的屏幕生成样式提供这个功能而已，棒
+        row 是可以折行显示的，所以如果一行放不下就会换行
+    -->
         <div class="box">
             <o-row>
-                <o-col></o-col>
-                <o-col></o-col>
-            </o-row>
-            <o-row gutter="10">
-                <o-col></o-col>
-                <o-col></o-col>
-                <o-col></o-col>
-            </o-row>
-            <o-row>
-                <o-col span = "2"></o-col>
-                <o-col span ="10" offset="3"></o-col>
-                <o-col span="6"></o-col>
-                <o-col span="3"></o-col>
+                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
+                    <div></div>
+                </o-col>
+                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
+                    <div></div>
+                </o-col>
+                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
+                    <div></div>
+                </o-col>
+                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
+                    <div></div>
+                </o-col>
+                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
+                    <div></div>
+                </o-col>
+                <o-col :phone="{span:24}" :ipad="{span:8}" :narrow-pc="{span:12}">
+                    <div></div>
+                </o-col>
             </o-row>
         </div>
 
