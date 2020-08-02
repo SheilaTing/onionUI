@@ -6,7 +6,14 @@ import chai, { expect } from "chai";
 import spies from 'chai-spies';
 import Input from './input.vue'
 import Row from './row.vue';
-import Col from './col.vue'
+import Col from './col.vue';
+import Tabs from './tabs/tabs.vue';
+import TabsItem from './tabs/tabs-item.vue';
+import TabsHead from './tabs/tabs-head.vue';
+import TabsBody from './tabs/tabs-body.vue';
+import TabsPanel from './tabs/tabs-panel.vue';
+import Collapse from './collapse.vue'
+import CollapseItem from './collapse/collapse-item'
 chai.use(spies);
 
 Vue.component('o-button',Button)
@@ -15,12 +22,20 @@ Vue.component('o-button-group',ButtonGroup)
 Vue.component('o-input',Input);
 Vue.component('o-row',Row);
 Vue.component('o-col',Col)
+Vue.component('o-tabs',Tabs)
+Vue.component('o-tabs-head',TabsHead)
+Vue.component('o-tabs-body',TabsBody)
+Vue.component('o-tabs-item',TabsItem)
+Vue.component('o-tabs-panel',TabsPanel);
+Vue.component('o-collapse',Collapse)
+Vue.component('o-collapse-item',CollapseItem)
 
 new Vue({
     el:'#app',
     data:{
         loading1:false,
-        loading2:false
+        loading2:false,
+        selectedTab:'tab1'
     },
     methods:{
         handlechange(event){
