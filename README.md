@@ -7,8 +7,9 @@
 
     使用前，请在 CSS 中开启 border-box
     ```
-      *,*::before,*::after{ box-sizing:border-box; }
+    *,*::before,*::after{ box-sizing:border-box; }
     ```
+
     设置默认颜色变量 css var， 目前请在 IE15 以上使用，后续会更改
     ```
         html{
