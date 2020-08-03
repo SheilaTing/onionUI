@@ -4,7 +4,7 @@ module.exports = {
     base:'/onionUI/',
     themeConfig: {
         nav: [
-            { text: 'Home', link: '/' },
+            { text: '源码', link: '/' },
         ],
         sidebar: [
             {

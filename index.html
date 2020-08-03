@@ -32,6 +32,11 @@
         margin:20px 20px;
         border:1px solid;
     }
+    .test-collapse{
+        margin:20px 20px;
+        padding:10px;
+    }
+   
 </style>
 
 <body>
@@ -57,6 +62,8 @@
             <o-input value="测试只读" readonly></o-input>
             <o-input value="测试error" error="一些规则，例如，长度不能小于3"></o-input>
             <o-input value="测试 onchange事件" @change="handlechange"></o-input>
+            <o-input v-model="testInput"></o-input>
+            {{testInput}}
         </div>
 
         <!-- 测试栅格布局 -->
@@ -102,16 +109,14 @@
 
         </div>
 
-        <div>
-            <o-collapse>
-                <o-collapse-item title="标题1">内容一</o-collapse-item>
-                <o-collapse-item title="标题2">内容二</o-collapse-item>
-                <o-collapse-item title="标题3">内容三</o-collapse-item>
+        <div class="test-collapse">
+            <o-collapse :selected.sync="selectedCollapse" :single="true" >
+                <o-collapse-item title="标题1" name="item1">内容一</o-collapse-item>
+                <o-collapse-item title="标题2" name = "item2">内容二</o-collapse-item>
+                <o-collapse-item title="标题3" name="item3">内容三</o-collapse-item>
             </o-collapse>
 
         </div>
-
-
     </div>
 
 </body>

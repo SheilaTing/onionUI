@@ -5,7 +5,7 @@ titile:快速上手
 # 快速上手
 
 ```
-import {Button} from 'gulu'
+import {Button} from 'tangerineui'
 import Vue from 'vue'
 
 new Vue({

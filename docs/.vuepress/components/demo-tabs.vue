@@ -6,8 +6,8 @@
     </p>
     <o-tabs :selected="selected">
       <o-tabs-head>
-        <o-tabs-item name="1">1</o-tabs-item>
-        <o-tabs-item name="2">2</o-tabs-item>
+        <o-tabs-item name="1">tab1</o-tabs-item>
+        <o-tabs-item name="2">tab2</o-tabs-item>
       </o-tabs-head>
       <o-tabs-body>
         <o-tabs-pane name="1">content 1</o-tabs-pane>

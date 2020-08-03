@@ -4,9 +4,9 @@
     <p>
       <strong>预览</strong>
     </p>
-    <o-input value="中文"></o-input>
-    <o-input value="中文" disabled></o-input>
-    <o-input value="中文" readonly></o-input>
+    <o-input value="你好"></o-input>
+    <o-input value="你好" disabled></o-input>
+    <o-input value="你好" readonly></o-input>
 
     <p>
       <strong>代码</strong>

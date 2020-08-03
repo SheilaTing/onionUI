@@ -12,7 +12,7 @@ import TabsItem from './tabs/tabs-item.vue';
 import TabsHead from './tabs/tabs-head.vue';
 import TabsBody from './tabs/tabs-body.vue';
 import TabsPanel from './tabs/tabs-panel.vue';
-import Collapse from './collapse.vue'
+import Collapse from './collapse/collapse.vue';
 import CollapseItem from './collapse/collapse-item'
 chai.use(spies);
 
@@ -35,11 +35,16 @@ new Vue({
     data:{
         loading1:false,
         loading2:false,
-        selectedTab:'tab1'
+        selectedTab:'tab1',
+        selectedCollapse:['item1','item2','item3'],
+        testInput:'测试v-modal'
     },
     methods:{
-        handlechange(event){
-            console.log(event.target.value)
+        handlechange(value){
+            console.log(value)
+        },
+        handlechange1(value){
+            this.testInput = value
         }
     }
 })
