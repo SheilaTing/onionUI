@@ -6,23 +6,9 @@
 1.添加样式
 
     使用前，请在 CSS 中开启 border-box
-    ```
+  
     *,*::before,*::after{ box-sizing:border-box; }
-    ```
 
-    设置默认颜色变量 css var， 目前请在 IE15 以上使用，后续会更改
-    ```
-        html{
-            --button-height:32px;
-            --font-size:14px;
-            --button-bg:white;
-            --button-active-bg:#eee;
-            --border-radius:4px;
-            --color:#333;
-            --border-color:#999;
-            --border-color-hover:#666;
-        }
-    ```
 2.安装
 ```
 yarn add --save tangerineui
