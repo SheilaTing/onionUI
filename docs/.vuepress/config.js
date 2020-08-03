@@ -4,7 +4,7 @@ module.exports = {
     base:'/onionUI/',
     themeConfig: {
         nav: [
-            { text: '源码', link: '/' },
+            { text: '源码', link: 'https://github.com/SheilaTing/onionUI' },
         ],
         sidebar: [
             {

@@ -1,6 +1,6 @@
 {
   "name": "tangerineui",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "简易ui组件",
   "main": "index.js",
   "scripts": {
